@@ -20,7 +20,7 @@ public class moveData : MonoBehaviour
 
         if(transform.position == target.position)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
