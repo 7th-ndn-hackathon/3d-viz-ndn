@@ -25,11 +25,13 @@ public class projData
         {
             public float x;
             public float y;
+            public float z;
 
             public vector(float xVal, float yVal, float zVal)
             {
                 x = xVal;
                 y = yVal;
+                z = zVal;
             }
         }
     }
