@@ -12,6 +12,7 @@ public class JSONFlowDataHelper : MonoBehaviour {
     private void Awake()
     {
         handler = gameObject.GetComponent<JSONDataHandler>();
+        handler.readFromJSON();
         getAllHosts();
     }
 
@@ -23,8 +24,6 @@ public class JSONFlowDataHelper : MonoBehaviour {
 
     void getAllHosts()
     {
-        handler.readFromJSON();
-        Debug.Log("Success");
         foreach(projData.host host in handler.data.hosts)
         {
             GameObject newHost = Instantiate(hostObj);

@@ -12,4 +12,10 @@ public class sceneOpener : MonoBehaviour
         SceneManager.LoadScene("Particle_Flow");
     }
 
+    public void
+    ShowMainScreen()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
 }
