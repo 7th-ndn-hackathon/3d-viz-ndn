@@ -18,4 +18,10 @@ public class sceneOpener : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
+    public void
+    showFlow2()
+    {
+        SceneManager.LoadScene("linearParticleFlow");
+    }
+
 }

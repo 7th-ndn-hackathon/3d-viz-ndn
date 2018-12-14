@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JSONFlowDataHelper : MonoBehaviour {
+public class JSONFlowDataHelper : MonoBehaviour
+{
 
     private JSONDataHandler handler;
     public GameObject hostObj;
@@ -17,14 +18,14 @@ public class JSONFlowDataHelper : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
 
-	}
+    }
 
     void getAllHosts()
     {
-        foreach(projData.host host in handler.data.hosts)
+        foreach (projData.host host in handler.data.hosts)
         {
             GameObject newHost = Instantiate(hostObj);
             newHost.name = host.name;
@@ -35,7 +36,7 @@ public class JSONFlowDataHelper : MonoBehaviour {
 
     void saveData()
     {
-        foreach(GameObject obj in hosts)
+        foreach (GameObject obj in hosts)
         {
             handler.addNewHost(obj.name, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
         }

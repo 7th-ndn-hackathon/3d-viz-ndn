@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Particle_Flow.unity
     guid: 754e02e72147d624daea78cd26bcb184
+  - enabled: 1
+    path: Assets/Scenes/linearParticleFlow.unity
+    guid: 080003a4d5afa7c4eb487f5491473a9d
   m_configObjects: {}
